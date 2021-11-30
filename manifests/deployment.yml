@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: eliyazsyedazuredevopsgithubacraksapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eliyazsyedazuredevopsgithubacraksapp
+  template:
+    metadata:
+      labels:
+        app: eliyazsyedazuredevopsgithubacraksapp 
+    spec:
+      containers:
+        - name: eliyazsyedazuredevopsgithubacraksapp 
+          image: aksregistry122.azurecr.io/eliyazsyedazuredevopsgithubacraksapp
+          ports:
+          - containerPort: 80
